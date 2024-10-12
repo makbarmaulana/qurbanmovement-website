@@ -1,7 +1,13 @@
 import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import NotFoundPage from './pages/NotFoundPage';
 
 function App() {
-  return <h1>Hello, World!</h1>;
+  return (
+    <Routes>
+      <Route path="*" element={<NotFoundPage />} />
+    </Routes>
+  );
 }
 
 export default App;
